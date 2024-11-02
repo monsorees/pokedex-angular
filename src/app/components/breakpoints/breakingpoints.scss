@@ -1,0 +1,76 @@
+:host {
+  display: grid;
+  gap: 10px;
+}
+
+@media (max-width: 599px) {
+  :host {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 500px;
+    margin: 0 auto;
+    .pokemon-card {
+      width: 307px;
+      height: 182px;
+    }
+    .content {
+      padding: 15px;
+    }
+    .info-left {
+      gap: 8px;
+    }
+    .pokemon-card__info {
+      gap: 5px;
+      h1 {
+        font-size: 25px;
+        //color: var(--primary-color);
+      }
+      p {
+        font-size: 11px;
+      }
+    }
+    .id-image {
+      gap: 1px;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  :host {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 635px;
+    margin: 0 auto;
+    .pokemon-card {
+      width: 307px;
+      height: 182px;
+    }
+    .content {
+      padding: 15px;
+    }
+    .info-left {
+      gap: 8px;
+    }
+    .pokemon-card__info {
+      gap: 5px;
+      h1 {
+        font-size: 25px;
+        //color: var(--primary-color);
+      }
+      p {
+        font-size: 11px;
+      }
+    }
+    .id-image {
+      gap: 1px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  :host {
+    display: grid;
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

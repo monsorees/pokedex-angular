@@ -1,0 +1,20 @@
+.header {
+  padding: 40px;
+  .img-header {
+    width: 192px;
+    height: 61px;
+  }
+}
+
+.img-g {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .imgG-header {
+    width: 495px;
+    height: 152px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
