@@ -1,4 +1,7 @@
 <div class="input-button">
-  <input type="text" class="search-input" placeholder="search eg, ditto or pikachu" />
-  <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+  <input [(ngModel)]="pokemonName" type="text" class="search-input" placeholder="search eg, ditto or pikachu" />
+  <button (click)="searchPokemon()" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+</div>
+<div *ngIf="searchedPokemon">
+  <app-pokemon-card [pokemon]="searchedPokemon"></app-pokemon-card>
 </div>
